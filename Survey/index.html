@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Movie Survey</title>
+        <style>
+            .survey-form {
+                font-size: 20px;
+                background-color: rgba(134, 168, 230, 0.466);
+                color: rgba(35, 3, 94, 0.904);
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+                color:red;
+                font-weight: bolder;
+                font-size: 30px;
+            }
+            p {
+                text-align: center;
+                color: red;
+                font-weight: bolder;
+                
+            }
+            label {
+                font-size: 20px;
+                display: block;
+            }
+            .box {
+                background-image: url(images/cinema.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 20px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div id="main" class="box">
+            <h1 id="title">Movie Survey</h1>
+            <p id="description">Favorite Movie Survey</p>
+        </div>
+        <form id="survey-form" class="survey-form">
+            <fieldset>
+                <legend> What's your favorite movie? </legend>
+                <label id="name-label">Name: </label>
+                <input type="text" id="name" name="name" placeholder="ex.John" required><br>
+                <label id="email-label"> Email:</label>
+                <input type="email" id="email" name="email" placeholder="ex.John@gmail.com" required><br>
+                <label id="number-label"> Age:</label> 
+                <input type="number" id="number" name="number" min="1" max="120" placeholder="ex.32" required><br>
+                <label> Movie:</label> 
+                <input type="text" id="movie" name="movie" placeholder="ex.John Wick" required><br><br>
+                <label>Gender:</label> 
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <label>How do you watch movies?</label>
+                <input type="checkbox" id="method1" name="method1" value="bluray">
+                <label for="method1"> Blueray/DVD</label>
+                <input type="checkbox" id="method2" name="method2" value="streaming">
+                <label for="method2"> Streaming</label>
+                <input type="checkbox" id="method3" name="method3" value="vhs">
+                <label for="method3"> VHS</label>
+                <input type="checkbox" id="method4" name="method4" value="theater">
+                <label for="method3"> Movie Theater</label><br>
+                <label for="dropdown">Favorite Movie Genre:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="horror">Horror</option>
+                    <option value="drama">Drama</option>
+                    <option value="thriller">Thriller</option>
+                </select><br><br>
+                <label>Comments:</label>
+                <textarea name="message" rows="10" cols="30">
+                    Comments or questions
+                </textarea><br><br>
+                <input type="submit" value="Submit" id="submit">
+            </fieldset> 
+        </form>
+    </body>
+</html>
